@@ -12,5 +12,6 @@ COPY ./common/ /usr/src/app/common
 
 COPY ./service/portfolio-service/  /usr/src/app/service/portfolio-service
 
-# RUN npm run build
-CMD ["node"]
+RUN npm run build
+
+CMD ["node", "./src/app.js"]
